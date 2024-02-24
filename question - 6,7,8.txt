@@ -1,0 +1,15 @@
+Question 6 solution:
+-int  = 32 bits
+-char = 1 byte or 8 bits
+-total size of struct = 32 + 8 + 8 = 48 bits
+
+Question 7 solution:
+-double  = 64 bits
+-char = 1 byte or 8 bits
+-total size of struct = 64 + 8 + 8 = 80 bits
+
+Question 8 solution:
+Hexdecimal value  = 12345678
+Binary Var = 0001 0010 0011 0100 0101 0110 0111 1000
+result = 1000 0111 0110 0101 0100 0011 0010 0001
+
