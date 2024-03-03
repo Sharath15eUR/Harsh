@@ -6,8 +6,20 @@
 #define LIST_H_INCLUDED
 
 void initList(List* list){
+    list->head = (Node**)malloc(sizeof(Node*));
+    if (list->head == NULL) {
+        fprintf(stderr, "Memory allocation failed for head pointer.\n");
+        exit(EXIT_FAILURE);
+    }
     *(list->head) = NULL;
     list->size = 0;
+}
+
+int isEmpty(List* list){
+    if(list->size == 0){
+        return 0;
+    }
+    return 1;
 }
 
 void printList(List* list){
@@ -21,8 +33,7 @@ void printList(List* list){
 
 void insertData(List* list, int num){
     Node* newNode = (Node*)malloc(sizeof(Node));
-    newNode->data = num;
-    newNode->next = NULL;
+    initNode(newNode, num);
     if(list->size == 0){
         *(list->head) = newNode;
     }
@@ -36,6 +47,21 @@ void insertData(List* list, int num){
     list->size++;
     printf("The list is:\n");
     printList(list);
+}
+
+void clearList(List* list){
+    printf("Deleting list from memory....\n");
+    Node* start = *(list->head);
+    while(start->next != NULL){
+        Node* adjacent = start->next;
+        printf("Cleared %d\n", getData(start));
+        free(start);
+        start = adjacent;
+    }
+    printf("Cleared %d\n", getData(start));
+    free(start);
+    list->head = NULL;
+    list->size = 0;
 }
 
 #endif
