@@ -8,7 +8,6 @@
 void initList(List* list){
     *(list->head) = NULL;
     list->size = 0;
-    return;
 }
 
 void printList(List* list){
@@ -18,7 +17,6 @@ void printList(List* list){
         temp = temp->next;
     }
     printf("NULL\n");
-    return;
 }
 
 void insertData(List* list, int num){
@@ -38,7 +36,6 @@ void insertData(List* list, int num){
     list->size++;
     printf("The list is:\n");
     printList(list);
-    return;
 }
 
 #endif
