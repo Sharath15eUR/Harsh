@@ -1,0 +1,2 @@
+Queue has two major operations - enqueue and dequeue, insertion from rear and deletion from front respectively.
+Additionally it has a utility functions to check if queue is empty, to check size and peek to get the element at front.
