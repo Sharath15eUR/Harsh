@@ -19,3 +19,9 @@ void initList(List* list);
 void insertData(List* list, int num);
 void printList(List* list);
 void clearList(List* list);
+
+int isEmptyD(DList* list);
+void initListD(DList* list);
+void insertDataD(DList* list, int num);
+void printListD(DList* list);
+void clearListD(DList* list);

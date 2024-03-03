@@ -14,4 +14,5 @@ typedef struct dnode DNode;
 
 void initNode(Node* node, int data);
 int getData(Node* node);
+void initNodeD(DNode* node, int data);
 int getDataD(DNode* node);

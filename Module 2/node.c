@@ -13,6 +13,12 @@ int getData(Node* node){
     return node->data;
 }
 
+void initNodeD(DNode* node, int data){
+    node->data = data;
+    node->next = NULL;
+    node->prev = NULL;
+}
+
 int getDataD(DNode* node){
     return node->data;
 }
