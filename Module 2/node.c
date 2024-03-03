@@ -6,8 +6,5 @@
 int getData(Node* node){
     return node->data;
 }
-Node* getNextNode(Node* node){
-    return node->next;
-}
 
 #endif

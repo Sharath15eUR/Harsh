@@ -6,4 +6,3 @@ struct node{
 typedef struct node Node;
 
 int getData(Node* node);
-Node* getNextNode(Node* node);
