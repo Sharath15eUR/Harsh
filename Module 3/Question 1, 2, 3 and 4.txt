@@ -1,0 +1,55 @@
+1. Which signals are triggered, when the following actions are performed.
+
+    1. user press ctrl+C
+    SIGINT
+
+    2. kill() system call is invoked
+    SIGKILL
+
+    3. CPU tried to execute an illegal instruction
+    SIGILL
+
+    4. When the program access the unassigned memory
+    SIGSEGV
+
+2. List the gdb command for the following operations
+
+    1. To run the current executable file
+    run (or) r
+
+    2. To create breakpoints at
+    b <function_name>
+
+    3. To resume execution once after breakpoint
+    continue
+
+    4. To clear break point created for a function
+    delete <breakpoint_number>
+
+    5. Print the parameters of the function in the backtrace
+    - info args
+    - bt
+
+3. Output of the code is
+2 2 2 2 2 2 
+
+4. Output of the code
+3 4 2 4 1 4 1 4
+
+5. Ways to prevent race condition and deadlock
+- Semaphores
+- Mutex Locks
+- Avoiding static or global variables
+- Use thread safe functions
+
+6. fork() vs exec()
+- Fork creates a clone of a process, only used to create a clone process. Parent and child relationship is preserved
+- Exec replaces the current process with a new process, Parent and child relationship is not preserved.
+
+7. Process vs Threads
+Processes:
+- Processes are basically programs that are being executed. A process does not share its memory, it can depend on other process but normally it is independent.
+- Threads are basically sub-units of a process, there can be any number of threads and all these threads share the memory allocated to the process.
+- Every process has one thread by default that is main thread
+- These threads share the code, resources and data.
+- Threads are lightweight, the execution time of process can be reduced using multithreading.
