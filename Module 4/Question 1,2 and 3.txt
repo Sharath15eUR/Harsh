@@ -1,0 +1,18 @@
+1. Connection procedure followed in client server communication
+Server:
+-Socket creation, socket().
+-Binding the socket, bind().
+-Listening for connections, listen().
+-Accepting incoming connections, accept().
+-Read and Write operations.
+-Close the connection. close()
+
+Client:
+-Socket Creation, socket().
+-Connect to the server, connect().
+-Read and Write operations to the server.
+-Close the connection, close().
+
+2. Bind() function in socket programming is used to assign a port and ip address to the socket for communication. If the server is not binded then the server will not know from which port the information will come from.
+
+3. Datagram Socket is a socket used for receiving datagrams or UDP packets.
